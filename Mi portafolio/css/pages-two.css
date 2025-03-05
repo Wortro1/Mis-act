@@ -1,0 +1,190 @@
+body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+@keyframes nombreDeLaAnimacion {
+    0% {
+      /* Estilo inicial */
+      transform: scale(1); /* Inicialmente, el elemento está a su tamaño normal */
+    }
+    50% {
+      /* Estilo intermedio */
+      transform: scale(1.1); /* El elemento se agranda al 150% */
+    }
+    100% {
+      /* Estilo final */
+      transform: scale(1); /* El elemento vuelve a su tamaño original */
+    }
+  }
+
+header{
+    width: 100%;
+    height: 15%;
+    background:linear-gradient(to top left, hwb(0 48% 52%), rgb(14, 83, 110));
+}
+
+header img{     
+    position: relative;
+    left: 45%;
+    width: 15%;
+    height: 100%;
+    
+
+}
+
+.main-page-two{
+  
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+    height: 55%;
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-cuadricula-digital-abstracto-negro_53876-97647.jpg?semt=ais_hybrid);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img-main{
+    position: relative;
+   left: 3%;
+    width: 20%;
+    height: 70%;
+    border-radius: 100%;
+
+}
+
+.photo-perfil{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 8px solid #055050;
+    object-fit: cover;
+
+}
+
+.div-information{
+    width: 25%;
+    height: 100%;
+    color: white;
+}
+
+.div-information h1 {
+    color: white;
+    background-color: #0dd471;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.div-button{
+    position: relative;
+    top: 10%;
+    display: flex;
+    gap: 15%;
+    width: 100%;
+    height: 16%;
+    animation: nombreDeLaAnimacion 3s ease-in-out infinite;
+}
+
+main div button{
+
+   
+    width: 70%;
+    height: 100%;
+    color: white;
+    background-color: gray ;
+}
+main div button:hover{
+    background-color: #646262;
+}
+.button-message{
+    background-color: #e4521d;
+}
+.button-message:hover{
+    background-color: hsl(16, 59%, 38%);
+}
+
+
+.icono-follow{
+    position:absolute;
+    left: 2%;
+    top: 14%;
+    width: 10%;
+    height: 70%;
+}
+.icono-message{
+    position: absolute;
+    left: 59%;
+    top: 14%;
+}
+
+.section-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient( to right bottom, hwb(199 2% 37%), #0c0c0c);
+}
+
+.div-html{
+    border-right: 4px solid #12b4dd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 80%;
+}
+
+.div-html-two{
+    border-left: 4px solid #12b4dd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 80%;
+
+}
+
+.div-html h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+
+
+}
+
+.div-html-two h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 40px;
+    gap: 15px;
+    
+}
+
+.list a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.footer-page-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    color: white;
+    background: linear-gradient( rgb(10, 57, 85), #0c0202) ;
+}

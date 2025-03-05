@@ -1,0 +1,157 @@
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+        background-image: url(https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msIAy.img);
+        /* filter: blur(2px); */
+        background-size: cover;
+        background-position: center;
+        overflow:hidden;
+        background-repeat: no-repeat;
+        background-attachment: fixed ;
+        font-family: "Yuji Mai", serif; 
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    height: 22%;
+    width: 100%;
+    background: linear-gradient(to bottom right, hsla(110, 57%, 59%, 0.8), #99808080); /* Gradiente
+    difuminado */
+}   
+.header img{
+    height: 100%;
+    width: 200px;
+}   
+
+
+.aside{
+    position: fixed;
+    margin-top: 7%;
+    height: 50%;
+    width: 10%;
+}
+
+.aside nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25%;
+    height: 100%;   
+}
+
+.aside nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    height: 20%;
+    width: 80%;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+}
+
+.aside nav a:hover{
+    width: 90%;
+    height: 25%;
+    border: 5px solid #3e9732;
+}
+.aside nav a:active{
+    width: 100%;
+    height: 35%;
+    background-color: hsla(39, 66%, 81%, 0.459);
+}
+.section-one{
+    position: relative;
+    left: 15%;
+    width: 69%;
+    height: 70%;
+}
+.section-one h1{
+    position:relative;
+    left: 27%;
+    font-size: 57px;
+    font-weight: 800;
+    color: hwb(0 100% 0%);
+    
+}
+.section-one h1:hover{
+    color:  hwb(135 3% 23% / 0.521);
+
+}
+.section-one a img {
+    position: absolute;
+    left: 35%;
+   
+    width: 30%;
+    height: 45%;
+    border-radius: 50%;
+    border: 8px solid #177517;
+    object-fit: cover;
+}
+
+.section-one a img:hover{
+    height: 50%;
+    width: 33%;    
+
+}
+.section-one a img:active{
+    width: 35%;
+    height: 55%;
+}
+.aside-two{
+    position: absolute;
+    top: 35%;
+    right: 0;
+    height: 55%;
+    width: 10%;
+   
+}
+
+.aside-two nav{
+    animation: nombreDeLaAnimacion 2s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 10px;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.aside-two nav img{
+    width: 80%;
+    height: 80%;
+}
+
+.aside-two nav img:hover{
+    width: 85%;
+    height: 85%;
+}
+.aside-two nav img:active{
+    width: 90%;
+    height: 90%;
+}
+
+
+
+@keyframes nombreDeLaAnimacion {
+    0% {
+      /* Estilo inicial */
+      transform: scale(1); /* Inicialmente, el elemento está a su tamaño normal */
+    }
+    50% {
+      /* Estilo intermedio */
+      transform: scale(1.1); /* El elemento se agranda al 150% */
+    }
+    100% {
+      /* Estilo final */
+      transform: scale(1); /* El elemento vuelve a su tamaño original */
+    }
+  }
