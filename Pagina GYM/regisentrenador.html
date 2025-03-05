@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sylesregistro.css">
+
+    <title>Document</title>
+</head>
+<body class="body-usuario" >
+    <section class="form-registro">
+        <h4>Formulario Entrenador</h4>
+        <input class="controls" type="text" name="Cedula" id="Cedula" placeholder="Ingrese su documento">
+        
+        <input class="controls" type="text" name="Nombres" id="Nombres" placeholder="Ingrese su nombre completo">
+        <input class="controls" type="tel" name="Telefono" id="Telefono" placeholder="Ingrese su numero de telfono">
+
+        <select class="controls" name="Genero" id="Genero">
+            <option value="Mujer">Mujer</option>
+            <option value="Hombre">Hombre</option>
+        </select>
+
+        <input class="controls" type="text" name="mail" id="mail" placeholder="Ingrese su correo" >
+        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingresa una contraseña" >
+        <input class="boton" type="submit" value="Registrar" onclick="registroEntrenador()" >
+        <p>Ya estoy registrado <a href="">Click aqui</a></p>
+    </section>
+
+
+    <style>
+        /* Estilos para el modal */
+        .modal {
+            display: none; /* Ocultar por defecto */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+        }
+
+        .modal-contenido {
+            background-color: white;
+            margin: 15% auto; /* Centrar en la pantalla */
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .cerrar {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .cerrar:hover {
+            color: black;
+        }
+    </style>
+
+
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <p>Se ha registrado con éxito</p>
+        </div>
+    </div>
+
+    <script>
+        function registroEntrenador() {
+            document.getElementById("miModal").style.display = "block";
+        }
+
+        function cerrarModal() {
+            document.getElementById("miModal").style.display = "none";
+        }
+
+        // Cerrar el modal si se hace clic fuera de él
+        window.onclick = function(event) {
+            let modal = document.getElementById("miModal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
